@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(features = "src/test/resources/features",
 glue = "StepsDefinition",
 tags = "@LoginTest and @Before and @After",
-plugin = { "pretty","html:target/cucumber-reports" }
+plugin = { "pretty","json:target/cucumber-reports-json/question1.json" }
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
 
